@@ -22,17 +22,11 @@ func palindromeTest(input: String) -> Bool {
             } else if index == compareSteps - 1 {
                 print("\(input) IS a palindrome")
                 return true
-            } else {
-                print("* * * * else statement")
-                return false
             }
-            
-        } //make exhaustive?
-        
+        }
+        print("* * * * outside comparison")
+        return false
     }
-    
-    print("* * * * outside comparison")
-    return false
 }
 
 palindromeTest(input: "tacocat")
