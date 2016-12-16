@@ -1,6 +1,6 @@
 import UIKit
 
-func bubbleSort(_ input: inout [Int]){
+func bubbleSort<T: Comparable>(_ input: inout [T]){
     
     var finished = false
     
@@ -28,3 +28,12 @@ func bubbleSort(_ input: inout [Int]){
 
 var foo = [6, 4, 1, 4, 6, 2 ,35, 9, 0, 1]
 bubbleSort(&foo)
+
+var bar = [9, 8, 7, 4, 1]
+bubbleSort(&bar)
+
+var cat = ["xA", "xB", "j", "a", "b"]
+bubbleSort(&cat)
+
+var dog = ["false", "true", "true", "true", "false", "false", "false"]
+bubbleSort(&dog)
